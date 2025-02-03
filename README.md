@@ -1,20 +1,20 @@
-# Neighborhood-Based Collaborative Filtering
+# 🎯 Neighborhood-Based Collaborative Filtering
 
 A recommender system implementation using Item-Based Collaborative Filtering (IBCF) algorithm.
 
-## Competition Link
+## 🔗 Competition Link
 [CMP2003 Rating Prediction Challenge](https://www.kaggle.com/competitions/cmp2003-rating-prediction)
 
-## Authors
+## 👥 Authors
 - Firas Elbayoumi 
 - Yaser Z. K. Shoshaa 
 - Briksam Kasimoglu 
 
-## Overview
+## 📝 Overview
 This project implements a recommender system that predicts user ratings for items using the Item-Based Collaborative Filtering algorithm. The system achieved an RMSE score of 0.89777
  on the [Kaggle leaderboard](https://www.kaggle.com/competitions/cmp2003-rating-prediction/leaderboard).
 
-### Key Features
+### ⭐ Key Features
 - Item-Based Collaborative Filtering (IBCF) approach
 - Cosine similarity for measuring item-to-item similarity
 - Top-20 nearest items as neighbors
@@ -23,7 +23,7 @@ This project implements a recommender system that predicts user ratings for item
   - userMap (reversed) (Item → (User → Rating))  
 - Generation and output of rating predictions for unseen item-user pairs
 
-## Project Structure 
+## 📁 Project Structure 
 
 ```
 cmp2003-rating-prediction/
@@ -42,7 +42,7 @@ cmp2003-rating-prediction/
 ```
 
 
-## Building and Running
+## 🚀 Building and Running
 
 1. Compile the source files:
    ```bash
@@ -59,7 +59,7 @@ cmp2003-rating-prediction/
    3. Compute predictions for the test set via IBCF.  
    4. Output all predictions to "data/predictions.csv."
 
-## Data Structures
+## 🗄️ Data Structures
 
 1. userMap (in RecommenderSystem rs):  
    - Key: User ID  
@@ -71,7 +71,7 @@ cmp2003-rating-prediction/
 
 These two maps let the system efficiently look up user ratings per item, and item ratings per user, enabling tasks like finding top users, top items, and calculating item-to-item similarities.
 
-## Algorithm Details
+## 🔬 Algorithm Details
 
 1. Item-Based Collaborative Filtering (IBCF):  
    - We compute similarities between pairs of items based on how users rate these items.  
@@ -99,11 +99,11 @@ These two maps let the system efficiently look up user ratings per item, and ite
    - Achieved 0.89777
  on the Kaggle leaderboard, reaching top rank.
 
-## Performance
+## 📊 Performance
 - RMSE Score: 0.89777 on private test set
 - Ranked #1 on [Kaggle leaderboards](https://www.kaggle.com/competitions/cmp2003-rating-prediction/leaderboard)  
 - Runtime: ~11.5 minutes  
 - Memory Usage: Reasonably efficient due to map-based data structures
 
-## License
-This project is part of the CMP2003 course assignment. 
+## 📝 Note
+This project is part of the CMP2003 (Data Structures and Algorithms in C++) course assignment. For detailed methodology and findings, please refer to the project report.
